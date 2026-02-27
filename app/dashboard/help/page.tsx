@@ -10,6 +10,8 @@ import {
   AlertTriangle,
   BookOpen,
   Headphones,
+  Activity,
+  Star,
 } from "lucide-react"
 import Image from "next/image"
 
@@ -136,7 +138,7 @@ export default function HelpPage() {
         </CardContent>
       </Card>
 
-      {/* NFT Holder Discounts */}
+      {/* Permanent Membership */}
       <Card className="bg-card/50 border-border/50 border-primary/30">
         <CardHeader>
           <CardTitle className="flex items-center gap-2">
@@ -145,50 +147,91 @@ export default function HelpPage() {
               <path d="M2 17l10 5 10-5"/>
               <path d="M2 12l10 5 10-5"/>
             </svg>
-            NFT 持有者专属优惠
+            永久会员
           </CardTitle>
-          <CardDescription>持有 Nobody NFT 即可享受充值折扣</CardDescription>
+          <CardDescription>一次付费，终身有效，无需续费</CardDescription>
         </CardHeader>
         <CardContent>
-          <div className="p-4 rounded-lg bg-primary/10 border border-primary/20 mb-4">
-            <p className="text-sm text-muted-foreground leading-relaxed">
-              Nobody NFT 共 <span className="text-primary font-bold">300</span> 个，分为三个等级，持有不同等级的 NFT 可享受对应的充值折扣优惠。
-            </p>
+          {/* Price highlight */}
+          <div className="p-5 rounded-lg border-2 border-primary bg-primary/10 text-center mb-5">
+            <div className="text-sm text-muted-foreground mb-1">永久会员价格</div>
+            <div className="text-4xl font-bold text-primary">¥99</div>
+            <div className="text-sm text-muted-foreground mt-1">一次性付费</div>
           </div>
-          <div className="grid gap-4 md:grid-cols-3">
-            <div className="p-4 rounded-lg border border-border bg-muted/20 text-center">
-              <div className="text-xs text-muted-foreground mb-1">普通 NFT</div>
-              <div className="text-sm text-muted-foreground mb-2">占比 70%</div>
-              <div className="text-3xl font-bold text-primary">9折</div>
-              <p className="text-xs text-muted-foreground mt-2">充值享 10% 优惠</p>
+
+          {/* Discount info */}
+          <div className="p-4 rounded-lg bg-primary/10 border border-primary/20 mb-5">
+            <div className="flex items-center justify-center gap-3 mb-2">
+              <span className="text-muted-foreground line-through">¥0.36/条</span>
+              <span className="text-primary font-bold text-lg">¥0.216/条 (6折)</span>
             </div>
-            <div className="p-4 rounded-lg border border-primary/50 bg-primary/5 text-center">
-              <div className="text-xs text-primary mb-1">高级 NFT</div>
-              <div className="text-sm text-muted-foreground mb-2">占比 20%</div>
-              <div className="text-3xl font-bold text-primary">8折</div>
-              <p className="text-xs text-muted-foreground mt-2">充值享 20% 优惠</p>
-            </div>
-            <div className="p-4 rounded-lg border-2 border-primary bg-primary/10 text-center relative overflow-hidden">
-              <div className="absolute top-0 right-0 bg-primary text-primary-foreground text-xs px-2 py-0.5 rounded-bl">稀有</div>
-              <div className="text-xs text-primary mb-1">顶级 NFT</div>
-              <div className="text-sm text-muted-foreground mb-2">占比 5%</div>
-              <div className="text-3xl font-bold text-primary">5折</div>
-              <p className="text-xs text-muted-foreground mt-2">充值享 50% 优惠</p>
-            </div>
+            <p className="text-sm text-muted-foreground text-center">充值享永久6折优惠</p>
+            <p className="text-xs text-muted-foreground text-center mt-1">一次购买，终身有效</p>
           </div>
-          <a 
-            href="https://nobodysmsnft.netlify.app/" 
-            target="_blank" 
+
+          {/* CTA Button */}
+          <a
+            href="https://ur.alipay.com/_6zXEVOzmKeWhLv9Z8QRKRU"
+            target="_blank"
             rel="noopener noreferrer"
-            className="mt-4 flex items-center justify-center gap-2 p-3 rounded-lg bg-primary/10 border border-primary/20 hover:bg-primary/20 transition-colors"
+            className="mb-5 flex items-center justify-center gap-2 p-3 rounded-lg bg-primary text-primary-foreground font-medium hover:bg-primary/90 transition-colors"
           >
-            <svg className="h-4 w-4 text-primary" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            立即开通永久会员
+            <svg className="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
               <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
               <polyline points="15 3 21 3 21 9"/>
               <line x1="10" y1="14" x2="21" y2="3"/>
             </svg>
-            <span className="text-sm font-medium text-primary">访问 NFT 官网</span>
           </a>
+
+          {/* Benefits */}
+          <div className="grid gap-3">
+            <div className="flex items-center gap-3 p-3 rounded-lg bg-muted/30">
+              <div className="flex h-8 w-8 items-center justify-center rounded-full bg-primary/15 shrink-0">
+                <Users className="h-4 w-4 text-primary" />
+              </div>
+              <div>
+                <p className="font-medium text-sm">邀请返利</p>
+                <p className="text-xs text-muted-foreground">下级消费5%返还</p>
+              </div>
+            </div>
+            <div className="flex items-center gap-3 p-3 rounded-lg bg-muted/30">
+              <div className="flex h-8 w-8 items-center justify-center rounded-full bg-primary/15 shrink-0">
+                <CreditCard className="h-4 w-4 text-primary" />
+              </div>
+              <div>
+                <p className="font-medium text-sm">邀请奖励</p>
+                <p className="text-xs text-muted-foreground">双方各得¥3</p>
+              </div>
+            </div>
+            <div className="flex items-center gap-3 p-3 rounded-lg bg-muted/30">
+              <div className="flex h-8 w-8 items-center justify-center rounded-full bg-primary/15 shrink-0">
+                <Headphones className="h-4 w-4 text-primary" />
+              </div>
+              <div>
+                <p className="font-medium text-sm">优先客服响应</p>
+                <p className="text-xs text-muted-foreground">会员专享优先处理</p>
+              </div>
+            </div>
+            <div className="flex items-center gap-3 p-3 rounded-lg bg-muted/30">
+              <div className="flex h-8 w-8 items-center justify-center rounded-full bg-primary/15 shrink-0">
+                <Activity className="h-4 w-4 text-primary" />
+              </div>
+              <div>
+                <p className="font-medium text-sm">新功能优先体验</p>
+                <p className="text-xs text-muted-foreground">抢先使用最新功能</p>
+              </div>
+            </div>
+            <div className="flex items-center gap-3 p-3 rounded-lg bg-muted/30">
+              <div className="flex h-8 w-8 items-center justify-center rounded-full bg-primary/15 shrink-0">
+                <Star className="h-4 w-4 text-primary" />
+              </div>
+              <div>
+                <p className="font-medium text-sm">专属定制服务</p>
+                <p className="text-xs text-muted-foreground">享受会员专属定制</p>
+              </div>
+            </div>
+          </div>
         </CardContent>
       </Card>
 
@@ -232,7 +275,7 @@ export default function HelpPage() {
             <div>
               <p className="font-medium text-primary">Nobody SMS 客服</p>
               <p className="text-sm text-muted-foreground">充值、开户、专属对接、问题咨询</p>
-              <p className="text-xs text-muted-foreground mt-1">工作时间：9:00 - 22:00</p>
+              <p className="text-xs text-muted-foreground mt-1">工作时间：9:00 - 18:00</p>
             </div>
           </div>
           
