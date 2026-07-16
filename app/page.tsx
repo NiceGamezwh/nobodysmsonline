@@ -124,7 +124,7 @@ export default function LoginPage() {
           </Card>
 
           <p className="text-center text-xs text-muted-foreground">
-            如需注册账号请<a href="https://qm.qq.com/q/oqPmRqD9eM" target="_blank" rel="noopener noreferrer" className="text-primary underline underline-offset-2 hover:text-primary/80 transition-colors">联系客服</a>
+            请直接使用购买的卡密账户登陆
           </p>
         </div>
       </div>
