@@ -46,13 +46,13 @@ export default function HelpPage() {
         </CardHeader>
         <CardContent className="space-y-4">
           <div className="p-4 rounded-lg bg-primary/10 border border-primary/20">
-            <h4 className="font-medium text-primary mb-2">如何确定项目名称？</h4>
+            <h4 className="font-medium text-primary mb-2">如何确定短信前缀？</h4>
             <p className="text-sm text-muted-foreground leading-relaxed">
-              项目名称需与短信签名一致。例如收到短信：
-              <span className="text-foreground">【闲鱼】967347（验证码仅用于您本人短信登录）</span>， 那么项目名称就是「
-              <span className="text-primary font-medium">闲鱼</span>」，即短信中【】内的内容。
+              比如我要注册<span className="text-primary font-semibold">韩剧圈</span>。收到短信：
+              <span className="text-foreground">【韩小圈】967347（验证码仅用于您本人短信登录）</span>， 那么项目名称就是「
+              <span className="text-primary font-medium">韩小圈</span>」，即短信中【】内的内容，并非软件名称。
             </p>
-            <p className="text-sm text-muted-foreground mt-2">提供给客服项目名称，即可获取对应的项目ID来使用。</p>
+            <p className="text-sm text-muted-foreground mt-2">根据得到的短信前缀去官网查找对应的项目ID来使用。</p>
           </div>
 
           <div className="grid gap-3">
@@ -131,7 +131,7 @@ export default function HelpPage() {
               </span>
               <div>
                 <p className="font-medium">充值方式</p>
-                <p className="text-sm text-muted-foreground">请联系客服进行充值</p>
+                <p className="text-sm text-muted-foreground">仅限会员用户充值，普通用户直接购买卡密使用</p>
               </div>
             </div>
           </div>
@@ -281,7 +281,7 @@ export default function HelpPage() {
           
           <div className="grid gap-3">
             <a 
-              href="https://nobodysms.xyz/" 
+              href="http://nobodysms.com/" 
               target="_blank" 
               rel="noopener noreferrer"
               className="flex items-center gap-3 p-3 rounded-lg bg-muted/30 hover:bg-muted/50 transition-colors"
@@ -295,12 +295,12 @@ export default function HelpPage() {
               </div>
               <div>
                 <p className="font-medium">官方网站</p>
-                <p className="text-sm text-muted-foreground">nobodysms.xyz</p>
+                <p className="text-sm text-muted-foreground">nobodysms.com</p>
               </div>
             </a>
             
             <a 
-              href="https://qm.qq.com/q/oqPmRqD9eM" 
+              href="https://qm.qq.com/q/RGUJvLdoce" 
               target="_blank" 
               rel="noopener noreferrer"
               className="flex items-center gap-3 p-3 rounded-lg bg-muted/30 hover:bg-muted/50 transition-colors"
@@ -317,22 +317,7 @@ export default function HelpPage() {
             </a>
             
             <a 
-              href="https://qm.qq.com/q/olY9eOkg26" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="flex items-center gap-3 p-3 rounded-lg bg-muted/30 hover:bg-muted/50 transition-colors"
-            >
-              <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10">
-                <Users className="h-5 w-5 text-primary" />
-              </div>
-              <div>
-                <p className="font-medium">用户 3 群</p>
-                <p className="text-sm text-muted-foreground">Nobody SMS 3群</p>
-              </div>
-            </a>
-            
-            <a 
-              href="https://www.yuque.com/nobodysms/xlypsu" 
+              href="https://www.showdoc.com.cn/2598853875396834/11559060627320140" 
               target="_blank" 
               rel="noopener noreferrer"
               className="flex items-center gap-3 p-3 rounded-lg bg-primary/10 border border-primary/20 hover:bg-primary/20 transition-colors"
