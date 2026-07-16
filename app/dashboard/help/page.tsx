@@ -49,7 +49,7 @@ export default function HelpPage() {
             <h4 className="font-medium text-primary mb-2">如何确定短信前缀？</h4>
             <p className="text-sm text-muted-foreground leading-relaxed">
               比如我要注册<span className="text-primary font-semibold">韩剧圈</span>。收到短信：
-              <span className="text-foreground">【韩小圈】967347（验证码仅用于您本人短信登录）</span>， 那么项目名称就是「
+              <span className="text-foreground">【韩小圈】967347（验证码仅用于您本人短信登录）</span>， 那么短信前缀就是「
               <span className="text-primary font-medium">韩小圈</span>」，即短信中【】内的内容，并非软件名称。
             </p>
             <p className="text-sm text-muted-foreground mt-2">根据得到的短信前缀去官网查找对应的项目ID来使用。</p>
