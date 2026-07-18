@@ -4,7 +4,7 @@ import { useState, useEffect, useRef } from "react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
-import { Loader2, Copy, Check } from "lucide-react"
+import { Loader2, Copy, Check, Search } from "lucide-react"
 import {
   getPhone,
   specifyPhone,
@@ -270,6 +270,19 @@ export default function GetPhonePage() {
           onChange={(e) => setSid(e.target.value)}
           className="border-0 bg-transparent text-primary text-lg h-12 placeholder:text-muted-foreground"
         />
+      </div>
+
+      {/* 查询项目ID跳转 */}
+      <div className="flex justify-end">
+        <a
+          href="https://nobodysms.com/search"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center gap-1 text-sm text-primary hover:underline"
+        >
+          <Search className="h-3.5 w-3.5" />
+          查询项目ID
+        </a>
       </div>
 
       {/* 运营商和类型选择 */}
