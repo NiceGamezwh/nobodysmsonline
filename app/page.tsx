@@ -8,7 +8,7 @@ import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { Lock, User, Loader2 } from "lucide-react"
+import { Lock, User, Loader2, ArrowLeft } from "lucide-react"
 import { login as apiLogin } from "@/lib/api"
 import { toast } from "sonner"
 import Image from "next/image"
@@ -126,6 +126,18 @@ export default function LoginPage() {
           <p className="text-center text-xs text-muted-foreground">
             请直接使用购买的卡密账户登陆
           </p>
+
+          <div className="text-center">
+            <a
+              href="https://nobodysms.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-1.5 text-xs text-muted-foreground hover:text-primary transition-colors"
+            >
+              <ArrowLeft className="h-3.5 w-3.5" />
+              返回官网
+            </a>
+          </div>
         </div>
       </div>
     </div>
