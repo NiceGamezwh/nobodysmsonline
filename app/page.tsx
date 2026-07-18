@@ -124,7 +124,7 @@ export default function LoginPage() {
           </Card>
 
           <p className="text-center text-xs text-muted-foreground">
-            请直接使用购买的卡密账户登陆
+            请直接使用购买的卡密账户登陆(脱离咸鱼交易的均为骗子,注册/购买链接不定时更新)
           </p>
 
           <p className="text-center text-xs">
@@ -134,7 +134,7 @@ export default function LoginPage() {
               rel="noopener noreferrer"
               className="text-primary hover:underline font-medium"
             >
-              立即注册/购买(脱离咸鱼交易的均为骗子,链接不定时更新)
+              立即注册/购买
             </a>
           </p>
 
