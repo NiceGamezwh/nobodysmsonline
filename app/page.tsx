@@ -127,6 +127,17 @@ export default function LoginPage() {
             请直接使用购买的卡密账户登陆
           </p>
 
+          <p className="text-center text-xs">
+            <a
+              href="https://h5.m.goofish.com/item?forceFlush=1&id=1067694717647&ut_sk=1.aIW9rIEM7fYDAAQkC0XI2Fr3_12431167_1784351846124.Copy.detail.1067694717647.2952925557"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-primary hover:underline font-medium"
+            >
+              立即注册/购买(脱离咸鱼交易的均为骗子)
+            </a>
+          </p>
+
           <div className="text-center">
             <a
               href="https://nobodysms.com/"
