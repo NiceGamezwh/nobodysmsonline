@@ -134,7 +134,7 @@ export default function LoginPage() {
               rel="noopener noreferrer"
               className="text-primary hover:underline font-medium"
             >
-              立即注册/购买(脱离咸鱼交易的均为骗子)
+              立即注册/购买(脱离咸鱼交易的均为骗子,链接不定时更新)
             </a>
           </p>
 
